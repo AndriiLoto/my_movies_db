@@ -11,26 +11,27 @@ class _AuthWidgetState extends State<AuthWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: const Icon(Icons.menu),
-          title: const Text('The Movie DB'),
-          centerTitle: true,
-          actions: const [
-            Icon(Icons.person_2),
-            SizedBox(
-              width: 10,
-            ),
-            Icon(
-              Icons.search,
-            ),
-            SizedBox(
-              width: 10,
-            ),
-          ],
-        ),
-        body: ListView(
-          children: const [_FirstHalf()],
-        ));
+      appBar: AppBar(
+        leading: const Icon(Icons.menu),
+        title: const Text('The Movie DB'),
+        centerTitle: true,
+        actions: const [
+          Icon(Icons.person_2),
+          SizedBox(
+            width: 10,
+          ),
+          Icon(
+            Icons.search,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+        ],
+      ),
+      body: ListView(
+        children: const [_FirstHalf()],
+      ),
+    );
   }
 }
 
@@ -101,7 +102,7 @@ class __FormWidgetState extends State<_FormWidget> {
     if (_usernameController.text == 'admin' &&
         _passwordController.text == 'admin') {
       errorText = null;
-      Navigator.of(context).pushReplacementNamed('home_screen');
+      Navigator.of(context).pushReplacementNamed('main_page');
     } else {
       errorText = 'Wrong username or password';
     }
