@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_movies_db/widgets/movieList/movie_list.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -41,9 +42,7 @@ class _MainPageState extends State<MainPage> {
           Center(
             child: Text('News'),
           ),
-          Center(
-            child: Text('Movies'),
-          ),
+          MovieList(),
           Center(
             child: Text('TV Shows'),
           ),
