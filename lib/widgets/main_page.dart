@@ -38,12 +38,12 @@ class _MainPageState extends State<MainPage> {
       ),
       body: IndexedStack(
         index: currentPageIndex,
-        children: const [
-          Center(
+        children: [
+          const Center(
             child: Text('News'),
           ),
           MovieList(),
-          Center(
+          const Center(
             child: Text('TV Shows'),
           ),
         ],
